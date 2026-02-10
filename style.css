@@ -3,62 +3,98 @@
 }
 
 a {
-    text-transform: none; /* tirar o sublinhado dos links */
+    text-decoration: none; /* tirar o sublinhado dos links */
     color: white;
 }
 
-/* @font-face {
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: allura;
+    font-weight: normal;
+}
+
+ @font-face {
     font-family: allura;
     src: url(fonts/allura_r.ttf);
-} */
+} 
 
 body {
     background-color: rgb(77, 13, 137);
-    justify-content: space-between; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
 }
 
 #content {
-    background-color: rgb(195, 131, 255);
-    width: 95%;
+    background-color: rgb(77, 13, 137);
+    width: 80%;
     border-radius: 7px;
-    text-align: center;
-    align-items: center;
     min-height: 90vh;
     margin-left: auto;
     margin-right: auto;
 }
 
-section button {
-    border-radius: 7px;
-    background-color: #FD4948;
-    color: white;
-    cursor: pointer;
+#mid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-#woman1 woman {
-    width: 100%;
+section {
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section button {
+    border-radius: 7px;
+    background-color: #9EA100;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 110px;
+    text-align: center;
+    border: 0;
+    font-family: allura;
+    font-size: 1.5rem;
+}
+
+
+#woman {
+    text-align: right;
+}
+
+.woman_img {
+    width: 75%;
 }
 
 #top {
     background-color: rgb(77, 13, 137);
     align-items: center;
     display: flex;
+    justify-content: space-between;
     border-radius: 7px;
+    padding: px;
+    width: 100%;
 }
 
 nav {
     background-color: rgb(77, 13, 137);
-    width: 30%;
-    height: 40px;
-    margin-left: 50%;
-    float: right; /* ajuda a div a ficar flutuando ao invés de configurar margens fixas */
-    border-radius: 7px;
-    padding: 10px; /* o padding serve pra colocar margens ao redor da div, às vezes funciona melhor que o margin porque o margin pode não ficar distribuído igualmente ao redor */
-}
-
-
-
-#mid {
+    width: 50%;
+    height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-around; /* Distribui os links igualmente */
+    border-radius: 7px;
+    padding: 10px; /* o padding serve pra colocar margens ao redor da div, às vezes funciona melhor que o margin porque o margin pode não ficar distribuído igualmente ao redor */
+    transition: color 0.3s ease; /* transição suave para mudança de cor */
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #C6C900; /* Muda cor no hover (opcional) */
 }
