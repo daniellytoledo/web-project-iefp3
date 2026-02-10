@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-transform: none; /* tirar o sublinhado dos links */
+    color: white;
+}
+
+/* @font-face {
+    font-family: allura;
+    src: url(fonts/allura_r.ttf);
+} */
+
+body {
+    background-color: rgb(77, 13, 137);
+    justify-content: space-between; /* calcula automaticamente os espaços entre as divs dentro pra ficar igual os espaçamentos */
+}
+
+#content {
+    background-color: rgb(195, 131, 255);
+    width: 95%;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section button {
+    border-radius: 7px;
+    background-color: #FD4948;
+    color: white;
+    cursor: pointer;
+}
+
+#woman1 woman {
+    width: 100%;
+}
+
+#top {
+    background-color: rgb(77, 13, 137);
+    align-items: center;
+    display: flex;
+    border-radius: 7px;
+}
+
+nav {
+    background-color: rgb(77, 13, 137);
+    width: 30%;
+    height: 40px;
+    margin-left: 50%;
+    float: right; /* ajuda a div a ficar flutuando ao invés de configurar margens fixas */
+    border-radius: 7px;
+    padding: 10px; /* o padding serve pra colocar margens ao redor da div, às vezes funciona melhor que o margin porque o margin pode não ficar distribuído igualmente ao redor */
+}
+
+
+
+#mid {
+    display: flex;
+    align-items: center;
+}
